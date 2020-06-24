@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Playground</title>
+</head>
+
+<body>
+	<div class="site">
+		<header class="site-header"></header>
+		<main class="site-main">
+			<div class="site-content">
+				<!-- SECTION VIDEOS -->
+				<section class="section section-videos">
+					<div class="video-gallery">
+						<div class="video-background">
+							<img src="https://i.ytimg.com/vi/eqGin5tLPbo/maxresdefault.jpg" alt="" />
+						</div>
+						<ul class="video-list">
+							<li class="video-list-item">
+								<div class="video-details" role="button" tabindex="0">
+									<figure>
+										<img src="https://i.ytimg.com/vi/eqGin5tLPbo/maxresdefault.jpg" alt="Text 1"  >
+									</figure>
+									<h3>Fast & Furious: Spy Racers | Season 1 Promo</h3>
+								</div>
+							</li>
+							<li class="video-list-item">
+								<div class="video-details" role="button" tabindex="0">
+									<figure>
+										<img src="https://i.ytimg.com/vi/eqGin5tLPbo/maxresdefault.jpg" alt="Text 1"  >
+									</figure>
+									<h3>Fast & Furious: Spy Racers | Season 1 Promo</h3>
+								</div>
+							</li>
+							<li class="video-list-item">
+								<div class="video-details" role="button" tabindex="0">
+									<figure>
+										<img src="https://i.ytimg.com/vi/eqGin5tLPbo/maxresdefault.jpg" alt="Text 1"  >
+									</figure>
+									<h3>Fast & Furious: Spy Racers | Season 1 Promo</h3>
+								</div>
+							</li>
+							<li class="video-list-item">
+								<div class="video-details" role="button" tabindex="0">
+									<figure>
+										<img src="https://i.ytimg.com/vi/eqGin5tLPbo/maxresdefault.jpg" alt="Text 1"  >
+									</figure>
+									<h3>Fast & Furious: Spy Racers | Season 1 Promo</h3>
+								</div>
+							</li>
+							<li class="video-list-item">
+								<div class="video-details" role="button" tabindex="0">
+									<figure>
+										<img src="https://i.ytimg.com/vi/eqGin5tLPbo/maxresdefault.jpg" alt="Text 1"  >
+									</figure>
+									<h3>Fast & Furious: Spy Racers | Season 1 Promo</h3>
+								</div>
+							</li>
+							<li class="video-list-item">
+								<div class="video-details" role="button" tabindex="0">
+									<figure>
+										<img src="https://i.ytimg.com/vi/eqGin5tLPbo/maxresdefault.jpg" alt="Text 1"  >
+									</figure>
+									<h3>Fast & Furious: Spy Racers | Season 1 Promo</h3>
+								</div>
+							</li>
+							<li class="video-list-item">
+								<div class="video-details" role="button" tabindex="0">
+									<figure>
+										<img src="https://i.ytimg.com/vi/eqGin5tLPbo/maxresdefault.jpg" alt="Text 1"  >
+									</figure>
+									<h3>Fast & Furious: Spy Racers | Season 1 Promo</h3>
+								</div>
+							</li>
+							<li class="video-list-item">
+								<div class="video-details" role="button" tabindex="0">
+									<figure>
+										<img src="https://i.ytimg.com/vi/eqGin5tLPbo/maxresdefault.jpg" alt="Text 1"  >
+									</figure>
+									<h3>Fast & Furious: Spy Racers | Season 1 Promo</h3>
+								</div>
+							</li>
+							<li class="video-list-item">
+								<div class="video-details" role="button" tabindex="0">
+									<figure>
+										<img src="https://i.ytimg.com/vi/eqGin5tLPbo/maxresdefault.jpg" alt="Text 1"  >
+									</figure>
+									<h3>Fast & Furious: Spy Racers | Season 1 Promo</h3>
+								</div>
+							</li>
+							<li class="video-list-item">
+								<div class="video-details" role="button" tabindex="0">
+									<figure>
+										<img src="https://i.ytimg.com/vi/eqGin5tLPbo/maxresdefault.jpg" alt="Text 1"  >
+									</figure>
+									<h3>Fast & Furious: Spy Racers | Season 1 Promo</h3>
+								</div>
+							</li>
+							<li class="video-list-item">
+								<div class="video-details" role="button" tabindex="0">
+									<figure>
+										<img src="https://i.ytimg.com/vi/eqGin5tLPbo/maxresdefault.jpg" alt="Text 1"  >
+									</figure>
+									<h3>Fast & Furious: Spy Racers | Season 1 Promo</h3>
+								</div>
+							</li>
+							<li class="video-list-item">
+								<div class="video-details" role="button" tabindex="0">
+									<figure>
+										<img src="https://i.ytimg.com/vi/eqGin5tLPbo/maxresdefault.jpg" alt="Text 1"  >
+									</figure>
+									<h3>Fast & Furious: Spy Racers | Season 1 Promo</h3>
+								</div>
+							</li>
+							<li class="video-list-item">
+								<div class="video-details" role="button" tabindex="0">
+									<figure>
+										<img src="https://i.ytimg.com/vi/eqGin5tLPbo/maxresdefault.jpg" alt="Text 1"  >
+									</figure>
+									<h3>Fast & Furious: Spy Racers | Season 1 Promo</h3>
+								</div>
+							</li>
+							<li class="video-list-item">
+								<div class="video-details" role="button" tabindex="0">
+									<figure>
+										<img src="https://i.ytimg.com/vi/eqGin5tLPbo/maxresdefault.jpg" alt="Text 1"  >
+									</figure>
+									<h3>Fast & Furious: Spy Racers | Season 1 Promo</h3>
+								</div>
+							</li>
+							<li class="video-list-item">
+								<div class="video-details" role="button" tabindex="0">
+									<figure>
+										<img src="https://i.ytimg.com/vi/eqGin5tLPbo/maxresdefault.jpg" alt="Text 1"  >
+									</figure>
+									<h3>Fast & Furious: Spy Racers | Season 1 Promo</h3>
+								</div>
+							</li>
+							<li class="video-list-item">
+								<div class="video-details" role="button" tabindex="0">
+									<figure>
+										<img src="https://i.ytimg.com/vi/eqGin5tLPbo/maxresdefault.jpg" alt="Text 1"  >
+									</figure>
+									<h3>Fast & Furious: Spy Racers | Season 1 Promo</h3>
+								</div>
+							</li>
+							<li class="video-list-item">
+								<div class="video-details" role="button" tabindex="0">
+									<figure>
+										<img src="https://i.ytimg.com/vi/eqGin5tLPbo/maxresdefault.jpg" alt="Text 1"  >
+									</figure>
+									<h3>Fast & Furious: Spy Racers | Season 1 Promo</h3>
+								</div>
+							</li>
+							<li class="video-list-item">
+								<div class="video-details" role="button" tabindex="0">
+									<figure>
+										<img src="https://i.ytimg.com/vi/eqGin5tLPbo/maxresdefault.jpg" alt="Text 1"  >
+									</figure>
+									<h3>Fast & Furious: Spy Racers | Season 1 Promo</h3>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- END SECTION VIDEOS -->
+				<section>
+					asd
+				</section>
+			</div>
+		</main>
+		<footer class="site-footer"></footer>
+	</div>
+</body>
+
+</html>

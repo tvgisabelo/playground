@@ -1,0 +1,235 @@
+html {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+:root {
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+// App Layout
+.app {
+	position: relative;
+
+	display: flex;
+	height: 1px;
+	min-height: 100vh;
+
+	flex-direction: column;
+
+	// App Header
+	&-header {
+		position: relative;
+
+		display: block;
+	}
+
+	// App Main
+	&-main {
+		position: relative;
+
+		flex: 1;
+
+		display: flex;
+		max-width: 100%;
+
+		flex-flow: row nowrap;
+	}
+
+	// App Content
+	&-content {
+		position: relative;
+
+		flex: 1 1 auto;
+
+		max-width: 100%;
+		height: 1px;
+		min-height: 200vh;
+	}
+
+	// App Footer
+	&-footer {
+		position: relative;
+	}
+}
+
+// Navbar
+.navbar {
+	font-size: 16px;
+
+	display: flex;
+	padding: 20px 0;
+
+	flex-flow: row nowrap;
+
+	background-color: #ffffff;
+
+	align-items: center;
+
+	&__logo {
+		display: block;
+
+		img {
+			width: 170px;
+			max-width: 100%;
+		}
+	}
+
+	&__menu {
+		display: flex;
+		margin: 0;
+		padding: 0;
+
+		list-style-type: none;
+		flex-flow: column;
+
+		@media (min-width: 576px) {
+			flex-flow: row wrap;
+		}
+
+		&-item {
+			position: relative;
+
+			display: block;
+
+			@media (min-width: 576px) {
+				&:hover,
+				&:focus-within {
+					> .navbar__menu {
+						display: block;
+					}
+				}
+			}
+		}
+
+		&-link {
+			position: relative;
+
+			display: block;
+		}
+
+		&--submenu {
+			padding-left: 15px;
+
+			@media (min-width: 576px) {
+				position: absolute;
+				z-index: 1;
+				top: 100%;
+				left: 0;
+
+				display: none;
+				width: 150px;
+				padding-left: 0;
+
+				.navbar__menu--submenu {
+					top: 0;
+					left: 100%;
+				}
+			}
+		}
+	}
+}
+
+.jw-nav {
+	color: #ffffff;
+
+	position: sticky;
+	top: 0;
+
+	padding: 23px 0;
+
+	background-color: #000000;
+
+	&-inner {
+		max-width: 1265px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	&-menu {
+		font-size: 1.478vw;
+		line-height: 1em;
+		text-align: center;
+		text-transform: uppercase;
+
+		display: flex;
+		margin: 0;
+		padding: 0;
+
+		list-style-type: none;
+		flex-flow: row wrap;
+		justify-content: center;
+
+		align-items: flex-start;
+
+		&-item {
+			flex: 1 1 0;
+
+			display: block;
+			width: 0;
+			max-width: 90px;
+		}
+
+		&-link {
+			color: #ffffff;
+			text-decoration: none;
+
+      display: block;
+		}
+
+		&-icon {
+			position: relative;
+
+			display: block;
+			margin-bottom: 15px;
+			padding-top: 110%;
+
+			&::before,
+			&::after {
+				content: '';
+
+				position: absolute;
+				top: 0;
+				left: 0;
+
+				display: block;
+				width: 100%;
+				height: 100%;
+
+				background-size: 100% 100%;
+
+				transition: opacity 0.3s;
+			}
+
+			&::after {
+				opacity: 0;
+			}
+
+			&-news {
+				&::before {
+					background-image: url('http://www.jurassicworld.com/jp25/assets/icon-news.png');
+				}
+
+				&::after {
+					background-image: url('http://www.jurassicworld.com/jp25/assets/icon-news-hover.png');
+				}
+			}
+		}
+	}
+}

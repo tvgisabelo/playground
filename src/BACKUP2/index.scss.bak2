@@ -1,0 +1,170 @@
+@mixin bp-small {
+	@media only screen and (min-width: 576px) {
+		@content;
+	}
+}
+
+@mixin bp-medium {
+	@media only screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin bp-large {
+	@media only screen and (min-width: 992px) {
+		@content;
+	}
+}
+
+@mixin bp-xlarge {
+	@media only screen and (min-width: 1200px) {
+		@content;
+	}
+}
+
+html {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+// App Layout
+.app {
+	position: relative;
+
+	display: flex;
+	height: 1px;
+	min-height: 100vh;
+
+	flex-direction: column;
+
+	// App Header
+	&-header {
+		position: relative;
+
+		display: block;
+	}
+
+	// App Main
+	&-main {
+		position: relative;
+
+		flex: 1;
+
+		display: flex;
+		max-width: 100%;
+
+		flex-flow: row nowrap;
+	}
+
+	// App Sidebar
+	&-sidebar {
+		position: relative;
+
+		flex: 0 0 250px;
+
+		max-width: 250px;
+
+		&__inner {
+			position: sticky;
+			top: 0;
+		}
+	}
+
+	// App Content
+	&-content {
+		position: relative;
+
+		flex: 1 1 auto;
+
+		max-width: 100%;
+		height: 1px;
+		min-height: 200vh;
+	}
+
+	// App Footer
+	&-footer {
+		position: relative;
+	}
+}
+
+// Navbar
+.navbar {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	font-size: 16px;
+
+	&__logo {
+
+	}
+
+	&__menu {
+		display: flex;
+		margin: 0;
+		padding: 0;
+
+		list-style-type: none;
+		flex-flow: column;
+
+		@media (min-width: 576px) {
+			flex-flow: row wrap;
+		}
+
+		&-item {
+			position: relative;
+
+			display: block;
+
+			@media (min-width: 576px) {
+				&:hover,
+				&:focus-within {
+					> .navbar__menu {
+						display: block;
+					}
+				}
+			}
+		}
+
+		&-link {
+			position: relative;
+
+			display: block;
+		}
+
+		&--submenu {
+			padding-left: 15px;
+
+			@media (min-width: 576px) {
+				position: absolute;
+				z-index: 1;
+				top: 100%;
+				left: 0;
+
+				display: none;
+				width: 150px;
+				padding-left: 0;
+
+				.navbar__menu--submenu {
+					top: 0;
+					left: 100%;
+				}
+			}
+		}
+	}
+}

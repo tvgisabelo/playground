@@ -1,0 +1,171 @@
+html {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+.site {
+	display: flex;
+	height: 1px;
+	min-height: 100vh;
+
+	flex-direction: column;
+}
+
+.site-header {
+	display: block;
+}
+
+.site-main {
+	flex: 1;
+
+	display: flex;
+
+	flex-direction: row;
+}
+
+.site-content {
+	flex: 1;
+
+	max-width: 100%;
+}
+
+.site-footer {
+	display: block;
+}
+
+/** Reusable Components **/
+// Section
+.section {
+
+	// Section Title
+	&-title {
+		font-size: 32px;
+		font-weight: bold;
+		text-transform: uppercase;
+
+		margin: 0 0 30px 0;
+	}
+}
+
+// Container
+.container {
+	width: 1200px;
+	max-width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+// Video Playlist
+.video-gallery {
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+
+	padding-right: 20px;
+	position: relative;
+
+	.video-background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+
+		> img {
+			object-fit: cover;
+			object-position: center;
+			position: inherit;
+			top: inherit;
+			left: inherit;
+			width: inherit;
+			height: inherit;
+		}
+	}
+
+	.video-list {
+		width: 250px;
+		margin: 0;
+		padding: 0;
+
+		list-style-type: none;
+
+		.video-list-item {
+			&:not(:first-of-type) {
+				border-top: 1px solid #eaeaea;
+			}
+
+			&:not(:last-child) {
+				padding-bottom: 10px;
+			}
+		}
+	}
+
+	.video-details {
+		cursor: pointer;
+		display: flex;
+
+		figure {
+			position: relative;
+
+			flex: 0 0 40%;
+
+			max-width: 40%;
+			margin: 0 10px 0 0;
+
+
+			> img {
+				display: block;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+	}
+
+	h3 {
+		font-size: 11px;
+		font-weight: normal;
+
+		margin: 0;
+	}
+}
+
+/** Section - Videos **/
+.section-videos {
+	height: 1px;
+	min-height: 100vh;
+	padding-bottom: 0;
+
+	.container {
+		display: flex;
+		height: 100%;
+
+		flex-direction: column;
+
+		.section-title {
+			flex: 0 0 auto;
+		}
+
+		.video-gallery {
+			flex: 1;
+		}
+	}
+}
